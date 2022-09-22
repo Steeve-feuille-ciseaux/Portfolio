@@ -120,3 +120,8 @@ img.profil {
 .user-info small {
   color: #545d7a;
 }
+
+#CV {
+  display: flex;
+  justify-content: center;
+}
