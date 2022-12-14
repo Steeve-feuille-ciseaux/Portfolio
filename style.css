@@ -108,15 +108,23 @@ img.profil {
   margin-top: auto;
 }
 
-.user img {
+.user .iconeCircle {
   border-radius: 50%;
   width: 40px;
   height: 40px;
   margin-right: 10px;
 }
+
+.no_radius {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
 .user-info h5 {
   margin: 0;
 }
+
 .user-info small {
   color: #545d7a;
 }
