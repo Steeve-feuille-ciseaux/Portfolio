@@ -7,15 +7,11 @@ body {
   background-color: #f7f8fc;
 }
 
-h1, h2{
-  text-align: center;
-}
-
 h4 {
   margin: 10px 0 2px 0;
 }
 
-footer {
+footer p{
   text-align: center;
 }
 
@@ -151,4 +147,17 @@ img.profil {
 
 .stack div span{
   margin-left: 10px;
+}
+
+.iconeSong {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  float: right;
+  font-size: 24px;
+  color: #999;
+}
+
+.titleCenter {
+  text-align: center;
 }
