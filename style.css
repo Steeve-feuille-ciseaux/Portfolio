@@ -156,8 +156,19 @@ img.profil {
   float: right;
   font-size: 24px;
   color: #999;
+  margin-bottom: -10px;
+  margin-right: -10px;
 }
 
 .titleCenter {
   text-align: center;
+}
+
+.btnBack {
+  color: black;
+  margin-top: 0px;
+}
+
+.imgSong {
+  width: 25px;
 }
