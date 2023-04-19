@@ -140,6 +140,11 @@ img.profil {
   margin-bottom: 5px;
 }
 
+.stack h3 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
 .stack div {
   display: flex;
   justify-content: center;
