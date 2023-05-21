@@ -186,3 +186,25 @@ img.profil {
 .imgSize {
   width: 50px;
 }
+
+.menu {
+  display: none;
+}
+
+.menu.visible {
+  display: block;
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  font-size: 24px;
+  color: #999;
+  margin-bottom: -10px;
+  margin-right: -10px;
+}
+.menu li {
+  list-style-type: none;
+}
+
+.menu li a {
+  text-decoration: none; 
+}
