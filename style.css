@@ -208,3 +208,34 @@ img.profil {
 .menu li a {
   text-decoration: none; 
 }
+
+.speech p{
+  text-align: justify;
+  margin:0 20vw 0 20vw;
+}
+
+.professional-text {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.professional-text strong {
+  font-weight: 600;
+}
+
+.professional-text em {
+  font-style: italic;
+}
+
+.professional-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.professional-text a:hover {
+  text-decoration: underline;
+}
