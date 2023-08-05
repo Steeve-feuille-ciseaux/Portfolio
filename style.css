@@ -154,6 +154,17 @@ img.profil {
   margin-left: 10px;
 }
 
+.iconeJuice {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: #999;
+  margin-bottom: 50px;
+  margin-right: -10px;
+
+}
+
 .iconeLearn {
   position: fixed;
   top: 20px;
