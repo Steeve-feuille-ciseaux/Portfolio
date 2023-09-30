@@ -1,0 +1,14 @@
+on "codepen" 
+https://codepen.io/littlesnippets/pen/yVQJeW 
+by "LittleSnippets.net" 
+name "#1577 - Image Hover"
+
+on "codepen" 
+https://codepen.io/littlesnippets/pen/yVQJeW 
+by "LittleSnippets.net" 
+name "#1581 - Image Hover"
+
+on "codepen" 
+https://codepen.io/andymerskin/pen/XNMWvQ
+by "Andy Merskin" 
+name "Parallax Depth Cards"
