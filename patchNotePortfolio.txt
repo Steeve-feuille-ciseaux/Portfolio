@@ -1,0 +1,9 @@
+-- Contenu du dépo
+
+Ajout clubWeb.html : Rassembler des ressources que j'utiliserai pour les cours Web / Programme, comme les livres pour les professeur
+
+Exemple commit :
+- new "nom du fichier" -> ajout d'un nouveau fichier 
+- update "nom du fichier" -> ajout de contenu 
+- upgrade "nom du fichier"-> améliorer le visuel 
+- delete "nom du fichier" -> suppression où réorganisation du fichier / architecture 
