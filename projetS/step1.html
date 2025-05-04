@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Résumé - Lancement d'un programme via clé USB</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #212529;
+      margin: 2rem;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #0d6efd;
+    }
+    .section {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    code {
+      background: #e9ecef;
+      padding: 0.2em 0.4em;
+      border-radius: 4px;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #dee2e6;
+    }
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+    }
+    img.qrcode {
+      max-width: 150px;
+      display: block;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Résumé : Exécution d'un programme via clé USB sur Android et iPhone</h1>
+
+  <div class="section">
+    <h2>1. Limitations générales</h2>
+    <ul>
+      <li>Android et iOS ne permettent pas l'exécution automatique de code externe.</li>
+      <li>Les systèmes mobiles bloquent tout autorun pour des raisons de sécurité.</li>
+      <li>Pas d'équivalent d'"autorun.inf" comme sous Windows.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>2. Solution pour Android</h2>
+    <ul>
+      <li>Placer un fichier <code>.apk</code> sur la clé USB.</li>
+      <li>Ajouter un fichier <code>LISEZMOI.txt</code> pour guider l'utilisateur.</li>
+      <li>L'utilisateur doit autoriser l'installation d'apps depuis des sources inconnues.</li>
+      <li>Utiliser un gestionnaire de fichiers pour ouvrir et installer l'APK.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>3. Solution pour iOS</h2>
+    <ul>
+      <li>Placer des fichiers médias ou une WebApp locale (HTML/CSS/JS).</li>
+      <li>Fichiers ouverts avec l'app Fichiers ou l'app du fabricant de la clé USB.</li>
+      <li>Pas de possibilité d'installation d'app, ni d'exécution de code natif.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>4. Solution WebApp locale (Android & iOS)</h2>
+    <ul>
+      <li>Créer une page HTML interactive (WebApp) fonctionnant localement.</li>
+      <li>Inclure un fichier <code>index.html</code> dans la clé USB.</li>
+      <li>Permet lecture sans installation sur navigateur mobile.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>5. Résumé comparatif</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Plateforme</th>
+          <th>Méthode</th>
+          <th>Installation</th>
+          <th>Exécution automatique</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Android</td>
+          <td>APK sur clé + guide</td>
+          <td>Manuelle</td>
+          <td>Non</td>
+        </tr>
+        <tr>
+          <td>iOS</td>
+          <td>WebApp ou médias</td>
+          <td>Lecture manuelle</td>
+          <td>Non</td>
+        </tr>
+        <tr>
+          <td>Les deux</td>
+          <td>WebApp locale</td>
+          <td>Lecture immédiate</td>
+          <td>Non</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>6. Structure recommandée à placer sur la clé USB</h2>
+    <pre>
+/ma-webapp/
+│
+├── index.html     ← Page d'accueil (déjà générée)
+├── style.css      ← Feuille de style externe (optionnelle)
+├── lisez-moi.txt  ← Instructions pour l’utilisateur
+└── /media/        ← (facultatif) Vidéos, images ou autres fichiers liés
+    </pre>
+  </div>
+
+  <div class="section">
+    <h2>7. Exemple de fichier lisez-moi.txt</h2>
+    <pre>
+Ouvrez le fichier index.html dans votre navigateur.
+Sur Android : utilisez un gestionnaire de fichiers pour y accéder.
+Sur iPhone : utilisez l'app Fichiers ou celle de votre clé USB.
+Aucune installation nécessaire.
+    </pre>
+  </div>
+
+  <div class="section">
+    <h2>8. Option complémentaire : QR Code de redirection</h2>
+    <p>Pour simplifier l'accès ou proposer une version en ligne de la WebApp ou d’un guide :</p>
+    <ul>
+      <li>Générez un QR code redirigeant vers un site web ou fichier hébergé (ex. GitHub, Google Drive, Dropbox).</li>
+      <li>Imprimez ou affichez le QR code dans un fichier image inclus sur la clé.</li>
+      <li>Exemple de lien : <code>https://exemple.com/mon-webapp</code></li>
+    </ul>
+    <p>Voici un exemple de QR code :</p>
+    <img class="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?data=https://exemple.com/mon-webapp&size=150x150" alt="QR Code vers la WebApp">
+  </div>
+
+</body>
+</html>
