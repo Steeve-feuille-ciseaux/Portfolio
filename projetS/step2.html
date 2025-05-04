@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Comparatif Accès Système Mobile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      color: #333;
+    }
+    .framework {
+      border-left: 6px solid #007bff;
+      background: #fff;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .framework h2 {
+      margin-top: 0;
+    }
+    .emoji {
+      font-size: 1.2rem;
+    }
+    ul {
+      margin-top: 0.5rem;
+    }
+    .highlight {
+      background-color: #e7f3ff;
+      padding: 0.5rem;
+      border-left: 4px solid #17a2b8;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Comparatif Accès Système sur Mobile</h1>
+  <p>Très bien ! Voici une mise à jour du comparatif en mettant l’accent sur les capacités d’accès au système du smartphone (comme accéder aux fichiers, faire du copier-coller, etc.), ce qui est essentiel pour certaines apps puissantes :</p>
+
+  <div class="framework">
+    <h2 class="emoji">🔷 1. Flutter (Google)</h2>
+    <p><strong>Langage :</strong> Dart</p>
+    <p><strong>Points forts :</strong></p>
+    <ul>
+      <li>Très fluide et performant.</li>
+      <li>Accès natif possible via des plugins (ex: file_picker, path_provider, clipboard).</li>
+      <li>Peut lire/écrire des fichiers, accéder aux dossiers locaux, gérer le presse-papiers, etc.</li>
+    </ul>
+    <p><strong>Limitations :</strong></p>
+    <ul>
+      <li>Certains accès système profonds nécessitent des intégrations natives personnalisées (Android/iOS).</li>
+    </ul>
+    <p>✅ <strong>Excellent choix</strong> pour les apps avec accès aux fichiers et clipboard.</p>
+  </div>
+
+  <div class="framework" style="border-left-color: #28a745;">
+    <h2 class="emoji">🟢 2. React Native</h2>
+    <p><strong>Langage :</strong> JavaScript / TypeScript</p>
+    <p><strong>Points forts :</strong></p>
+    <ul>
+      <li>Beaucoup de plugins comme react-native-fs (fichiers), react-native-clipboard, etc.</li>
+      <li>Accès possible au stockage interne, externe, au presse-papiers, etc.</li>
+      <li>Plus facile à connecter avec des modules natifs (Java/Kotlin pour Android, Swift/Obj-C pour iOS).</li>
+    </ul>
+    <p>✅ <strong>Très bon choix</strong> pour des apps puissantes avec gestion du système de fichiers.</p>
+  </div>
+
+  <div class="framework" style="border-left-color: #fd7e14;">
+    <h2 class="emoji">🟠 3. Kotlin Multiplatform</h2>
+    <p><strong>Langage :</strong> Kotlin</p>
+    <ul>
+      <li>Partage la logique métier seulement. Les interfaces restent natives (SwiftUI + Jetpack Compose).</li>
+      <li>✅ Très puissant, mais demande de coder des parties spécifiques deux fois (UI).</li>
+      <li>Idéal si tu veux du contrôle total sur l'accès système, mais nécessite plus de travail.</li>
+    </ul>
+  </div>
+
+  <div class="framework" style="border-left-color: #6f42c1;">
+    <h2 class="emoji">🟣 4. Xamarin / .NET MAUI</h2>
+    <p><strong>Langage :</strong> C#</p>
+    <ul>
+      <li>Peut accéder aux fichiers, au presse-papiers, etc. via des bibliothèques comme Essentials.</li>
+      <li>Plus orienté vers les développeurs .NET.</li>
+    </ul>
+    <p>✅ Fonctionnel, mais un peu moins populaire en 2025 comparé à Flutter/React Native.</p>
+  </div>
+
+  <div class="framework" style="border-left-color: #ffc107;">
+    <h2 class="emoji">🔶 5. Capacitor / Ionic</h2>
+    <p><strong>Langage :</strong> JavaScript + Web</p>
+    <ul>
+      <li>Peut accéder au système via des plugins Capacitor (fichiers, clipboard, etc.).</li>
+      <li>⚠️ Dépend fortement du WebView → moins performant pour les gros fichiers ou les tâches lourdes.</li>
+    </ul>
+    <p>✅ Suffisant pour des apps plus simples ou des prototypes.</p>
+  </div>
+
+  <div class="highlight">
+    <p>✅ <strong>Recommandation finale (accès système + multiplateforme) :</strong><br>
+    <strong>Flutter</strong> si tu veux une app moderne, très rapide, avec une communauté solide.<br>
+    <strong>React Native</strong> si tu viens du web ou JS, et que tu veux un accès plus direct aux fonctions natives.</p>
+  </div>
+</body>
+</html>
