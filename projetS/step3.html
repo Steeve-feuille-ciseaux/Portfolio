@@ -1,93 +1,115 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Comparatif des Frameworks Multiplateformes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lovable et Flutter</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      background-color: #f9f9f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      background: #f0f2f5;
       color: #333;
     }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
     h1 {
-      font-size: 24px;
+      text-align: center;
       color: #2c3e50;
+      margin-bottom: 30px;
     }
-    h2 {
-      color: #2980b9;
+
+    .section {
+      margin-bottom: 30px;
     }
-    pre {
-      background-color: #eee;
-      padding: 10px;
+
+    .emoji {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .code {
+      background-color: #eef2ff;
+      color: #2a3b8f;
+      padding: 4px 8px;
       border-radius: 5px;
-      overflow-x: auto;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.95em;
     }
-    .framework {
-      margin-bottom: 20px;
-    }
-    code {
-      font-family: Consolas, monospace;
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Comparatif en mettant l’accent sur les capacités d’accès au système du smartphone (comme accéder aux fichiers, faire du copier-coller, etc.)</h1>
+  <div class="container">
+    <h1>Lovable et Flutter</h1>
 
-  <div class="framework">
-    <h2>Flutter (Dart)</h2>
-    <ul>
-      <li>Très fluide, moderne, UI personnalisable.</li>
-      <li>Accès au système via des plugins comme <code>file_picker</code>, <code>clipboard</code>, etc.</li>
-      <li>Idéal pour les apps performantes avec interaction native.</li>
-    </ul>
-    <h3>Exemple Flutter – Copier/Coller et Accès aux Fichiers</h3>
-    <pre><code>// pubspec.yaml dependencies :
-clipboard: ^0.1.3
-file_picker: ^6.0.0
+    <div class="section">
+      <p>
+        Lovable ne code pas encore en <strong>Flutter</strong> ni pour les applications mobiles natives (Android/iOS). 
+        Il est conçu pour créer des applications web en utilisant principalement des technologies comme :
+      </p>
+      <ul>
+        <li><span class="code">React</span> (front-end)</li>
+        <li><span class="code">Tailwind CSS</span> (style)</li>
+        <li><span class="code">Supabase</span> (base de données et authentification)</li>
+        <li><span class="code">Stripe</span> (paiements)</li>
+        <li><span class="code">Node.js</span> (côté serveur, parfois)</li>
+      </ul>
+    </div>
 
-import 'package:flutter/services.dart';
-import 'package:file_picker/file_picker.dart';
+    <div class="section">
+      <p class="emoji">❌ <strong>Limitations actuelles :</strong></p>
+      <ul>
+        <li>Pas de génération d'apps Flutter, Swift, Kotlin ou React Native.</li>
+        <li>Pas d'accès direct aux fichiers du smartphone (stockage local, caméra, etc.) comme on peut le faire avec Flutter ou d'autres frameworks mobiles.</li>
+      </ul>
+    </div>
 
-void copyTextToClipboard(String text) {
-  Clipboard.setData(ClipboardData(text: text));
-}
-
-Future<void> pickFile() async {
-  FilePickerResult? result = await FilePicker.platform.pickFiles();
-
-  if (result != null) {
-    String? filePath = result.files.single.path;
-    print("Fichier sélectionné : \$filePath");
-  }
-}
-</code></pre>
-  </div>
-
-  <div class="framework">
-    <h2>React Native (JavaScript)</h2>
-    <ul>
-      <li>Basé sur React, très populaire, facile pour les développeurs web.</li>
-      <li>Utilise des modules comme <code>react-native-fs</code> et <code>@react-native-clipboard/clipboard</code>.</li>
-    </ul>
-    <h3>Exemple React Native – Copier/Coller et Accès aux Fichiers</h3>
-    <pre><code>// Installer les modules :
-npm install @react-native-clipboard/clipboard react-native-fs
-
-import Clipboard from '@react-native-clipboard/clipboard';
-import RNFS from 'react-native-fs';
-
-const copyToClipboard = (text) => {
-  Clipboard.setString(text);
-};
-
-const listFiles = async () => {
-  const files = await RNFS.readDir(RNFS.DocumentDirectoryPath);
-  files.forEach(file => console.log("Fichier :", file.name));
-};
-</code></pre>
+    <div class="section">
+      <p class="emoji">✅ <strong>Alternatives si tu veux du Flutter avec IA :</strong></p>
+      <p>
+        Si ton objectif est de créer une application mobile Flutter avec des fonctionnalités comme l'accès aux fichiers du téléphone, tu peux essayer :
+      </p>
+      <ul>
+        <li><strong>Codeium</strong> ou <strong>Cursor</strong> : assistants IA dans des IDE (VS Code, Android Studio).</li>
+        <li><strong>GPT-4</strong> (comme ici) : tu peux me décrire l’app, et je peux t’aider à générer du code Flutter.</li>
+        <li><strong>Github Copilot</strong> : aide bien dans des projets Flutter si tu as déjà un environnement de développement installé.</li>
+      </ul>
+    </div>
   </div>
 
 </body>
