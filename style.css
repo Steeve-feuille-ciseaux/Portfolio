@@ -220,17 +220,28 @@ img.profil {
   text-decoration: none; 
 }
 
-.speech p{
-  text-align: justify;
-  margin:0 20vw 0 20vw;
+/* Centrage du titre */
+.titleCenter {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1rem;
 }
 
+/* Style général du bloc */
+.speech {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+/* Texte professionnel */
 .professional-text {
   font-family: Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #333;
-  line-height: 1.5;
+  line-height: 1.6;
   text-align: justify;
 }
 
@@ -249,4 +260,10 @@ img.profil {
 
 .professional-text a:hover {
   text-decoration: underline;
+}
+
+/* Listes dans le texte */
+.professional-text ul {
+  margin: 1rem 0 1rem 2rem;
+  padding: 0;
 }
