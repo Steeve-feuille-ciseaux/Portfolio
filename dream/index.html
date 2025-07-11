@@ -8,9 +8,15 @@
     <script src="progress.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Banshee Dice / Dice Smile</h1> 
-    </header>
+    <nav>
+        <button class="menu-button" aria-label="Ouvrir le menu" onclick="toggleMenu()">&#9776;</button>
+        <h1>Banshee Dice / Dice Smile</h1>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="dataYT/succesStory.html">Succès Story</a></li>
+            <li><a href="dataYT/financeStory.html">Finance / Opportunité</a></li>
+        </ul>
+        <button id="toggleDarkMode">🌓 Mode sombre</button>
+    </nav>
 
     <main class="projects-container">
 
@@ -315,5 +321,7 @@
         </div>
 
     </main>
+    <script src="toggleMenu.js"></script>
+    <script src="darkTheme.js"></script>
 </body>
 </html>
